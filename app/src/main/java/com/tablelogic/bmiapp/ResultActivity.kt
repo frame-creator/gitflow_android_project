@@ -20,6 +20,7 @@ class ResultActivity: AppCompatActivity() {
         val bmi = weight / (height / 100.0).pow(2.0)
         val resultText = when {
             bmi >= 35.0 -> "고도 비만"
+            bmi >= 30.0 -> "중정도 비만"
             bmi >= 25.0 -> "경도 비만"
             bmi >= 23.0 -> "과체중"
             bmi >= 18.5 -> "정상체중"
